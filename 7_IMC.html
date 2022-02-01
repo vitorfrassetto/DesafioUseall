@@ -1,0 +1,21 @@
+<script>
+var altura = prompt('Digite um altura (Ex: 1m e 75cm = 175)'); 
+var peso = prompt('Digite um digite peso (Ex: 60kg = 60 )');
+
+altura = altura / 100;
+
+var imc = peso / (altura * altura);
+
+if (imc < 18.5){
+    alert('Seu imc e de '+ imc +' e seu status e de BAIXO PESO');
+}
+else if (imc >= 18.5 && imc <=24.9){
+    alert('Seu imc e de '+ imc +' e seu status e de NORMAL');
+}
+else if (imc >= 25 && imc <=30){
+    alert('Seu imc e de '+ imc +' e seu status e de ALTO PESO');
+}
+else{
+    alert('Seu imc e de '+ imc +' e seu status e de OBESIDADE');
+}
+</script>

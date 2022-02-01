@@ -1,0 +1,33 @@
+<script>
+    
+var valor = parseInt(prompt('Informe o valor a ser sacado')),
+notaCem = 0, 
+notaCinquenta = 0,
+notaVinte = 0,
+notaDez = 0;
+if (valor % 10 == 0) {
+    while(valor != 0){
+        if (valor >= 100){
+            valor = valor - 100;
+            notaCem ++;
+        }else if(valor >= 50 && valor < 100){
+            valor = valor - 50;
+            notaCinquenta ++;
+        }else if(valor >= 20 && valor < 50){
+            valor = valor - 20;
+            notaVinte ++;
+        }else if(valor >= 10 && valor < 20){
+            valor = valor - 20;
+            notaDez ++;
+        }
+    }
+    document.write('Notas Recebidas<br>');
+    document.write('Notas de 100 = ' + notaCem + '<br>');
+    document.write('Notas de 50 = ' + notaCinquenta + '<br>');
+    document.write('Notas de 20 = ' + notaVinte + '<br>');
+    document.write('Notas de 10 = ' + notaDez + '<br>');
+}else{
+    alert('Desculpe nao temos notas para fazer esse saque');
+}
+
+    </script>

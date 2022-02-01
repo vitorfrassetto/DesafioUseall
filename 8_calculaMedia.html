@@ -1,0 +1,26 @@
+    <script>
+        function calculaMedia3(){
+
+            var num1 = parseFloat(3);
+            num2 = parseFloat(10),
+            num3 = parseFloat(10);
+            media = (num1 + num2 + num3)/3;
+
+            console.log(media);
+        }
+        calculaMedia3();
+
+        function calculaVarios(){
+            var quantidadeNotas = [8, 10, 9, 4],
+            tamanhoVetor = quantidadeNotas.length,
+            somaValores = 0,
+            mediaVarias = 0;
+
+            for(var i = 0; i<tamanhoVetor; i++){
+                somaValores = somaValores + parseFloat(quantidadeNotas[i]);
+            }
+            mediaVarias = somaValores/ tamanhoVetor;
+            console.log(mediaVarias)
+        }
+        calculaVarios()
+    </script>

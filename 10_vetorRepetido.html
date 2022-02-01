@@ -1,0 +1,21 @@
+<script>
+var vetor = [10, 20, 15, 20, 21],
+verificaRepetido = false;
+tamanhoVetor = vetor.length,
+ordenaVetor = vetor.sort();
+
+
+for(var i = 0; i < tamanhoVetor; i++){
+
+    if(ordenaVetor[i] === ordenaVetor[i+1]){
+        verificaRepetido = true;
+    }
+};
+
+    if(verificaRepetido){
+        alert('Exitem valores repetidos');
+    }else {
+        alert('Nao exitem valores repetidos');
+    }
+
+</script>
